@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Color Mixer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-mixer">
+        <div class="row">
+          <div class="col-xl-12">
+            <h3 class="color-mixer__title">Color Mixer</h3>
+
+            <div class="color-mixer__window"></div>
+          </div>
+        </div>
+        <div class="color-inputs row mt-3 jusify-content-center text-center">
+          <div class="col-xl-4">
+            <div class="out"></div>
+            <input type="range" min="0" max="255" />
+            <p class="input__text" data-color="red">red</p>
+          </div>
+          <div class="col-xl-4">
+            <div class="out"></div>
+            <input type="range" min="0" max="255" data-color="blue" />
+            <p class="input__text" data-color="green">green</p>
+          </div>
+          <div class="col-xl-4">
+            <div class="out"></div>
+            <input type="range" min="0" max="255" />
+            <p class="input__text" data-color="blue">blue</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
